@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+<body>
+    <form>
+        <input type="text" id="search" class="form-control" placeholder="Busqueda de habitaciones">
+        <input type="submit" value="buscar" class="form-control">
+    </form>
+    <div id="filters">
+        <h3>Filtros</h3>
+        <div id="floor-container">
+            entre el piso 
+            <input type="number" name="min_floor" id="min_floor" class="form-control">
+            y el piso
+            <input type="number" name="max_floor" id="max_floor" class="form-control">
+        </div><br>
+        <div id="price-container">
+            precio entre
+            <input type="number" name="min_price" id="min_price" class="form-control">
+            y 
+            <input type="number" name="max_price" id="max_price"  class="form-control">
+        </div><br>
+        <div id="minibar-container">
+            Tiene minibar 
+            <!--<select name="minibar" id="minibar" size="3">
+                <option value="">Seleccione</option>
+                <option value="1" selected>Sí</option>
+                <option value="0">No</option>
+            </select>-->
+            <input type="checkbox" name="minibar" id="minibar"  class="form-control">
+            <!--<input type="radio" name="minibar" id="minibar_yes" checked> <label for="minibar_yes">Sí</label>
+            <input type="radio" name="minibar" id="minibar_no"> <label for="minibar_no">No</label>-->
+        </div><br>
+        <div>
+            capacidad: <input type="number" name="capcity" id="capacity" min="1" max="5"  class="form-control">
+        </div><br>
+        <div>
+            Estrellas: 
+            <select name="stars" id="stars"  class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <!--<input type="radio" name="stars" id="stars_1"> <label for="stars_1">1</label>
+            <input type="radio" name="stars" id="stars_2"> <label for="stars_2">2</label>
+            <input type="radio" name="stars" id="stars_3"> <label for="stars_3">3</label>
+            <input type="radio" name="stars" id="stars_4"> <label for="stars_4">4</label>
+            <input type="radio" name="stars" id="stars_5"> <label for="stars_5">5</label>-->
+        </div>
+    </div><br><br>
+    <div id="results">
+        <h3>resultados</h3><br>
+        <div class="result">
+            <img src="https://picsum.photos/200" alt="foto resultado 1">
+            <h4>Nombre del hotel</h4>
+            <h4>Estrellas del hotel</h4>
+            <h5>Nombre de la ciudad</h5>
+            <h5>Tipo de habitación</h5>
+            <h5>capacidad</h5>
+            <h5>minibar</h5>
+            <h5>precio</h5>
+            <h5>piso - numero</h5>
+        </div>
+    </div>
+</body>
+</html>
